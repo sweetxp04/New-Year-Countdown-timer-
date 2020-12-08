@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lobster", cursive;
+  height: 100vh;
+  background: url(img/cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+#main {
+  width: 50vw;
+  text-align: center;
+}
+#main h1 {
+  font-size: 5rem;
+  margin-top: -200px;
+  letter-spacing: 10px;
+}
+#main .countDown {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#main .countDown h3 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+#main .item {
+  margin: 0 25px;
+}
+#main .countDown span {
+  font-size: 1.5rem;
+}
